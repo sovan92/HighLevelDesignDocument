@@ -1,8 +1,5 @@
-Great question! Let’s break down **Single-Leader Replication** (also known as **Master-Slave Replication**) — it’s a fundamental concept in distributed systems and databases like MySQL, PostgreSQL, Kafka, and more.
 
----
-
-## 📘 What is Single-Leader Replication?
+# 📘 What is Single-Leader Replication?
 
 **Single-Leader Replication** is a **replication strategy** where:
 
