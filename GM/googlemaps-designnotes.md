@@ -153,4 +153,4 @@ flowchart TD
 
 ---
 
-Would you like this as a downloadable PDF, or visual system architecture diagrams with components and data flow?
+![High level design diagram](Screenshot%202025-04-23%20at%208.24.23%20AM.png "1")
