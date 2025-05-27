@@ -24,3 +24,6 @@ Physical partition
 
 ### Microservice each with it's own database. 
 This is called database per service pattern. 
+
+### Problems with Syncronous commnucation 
+- If a service is dead for several hours. 
