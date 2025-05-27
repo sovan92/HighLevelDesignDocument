@@ -64,6 +64,8 @@ thread.interupt()
 if (Thread.currentThread().isInterupted())
 InteruptedException
 ```
+## Daemon thread
+- Run in background , don't become a blocker for an application if the main tread terminates . Like a text editor . If main thread terminates, the saving thread that periodically saves data doesn't have to end for the program to terminate. 
 
 
 
