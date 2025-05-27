@@ -60,12 +60,21 @@ thead.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler(){
 ## Thread termination - Why and when ? 
 
 ```java
-thread.interupt()
+thread.interupt() - Stops the tread if the thread in question throws an interupted exception or is handling the interupted signal explicitly (Thread.currentThread().isInterupted())
 if (Thread.currentThread().isInterupted())
 InteruptedException
+
+
+
+
 ```
 ## Daemon thread
-- Run in background , don't become a blocker for an application if the main tread terminates . Like a text editor . If main thread terminates, the saving thread that periodically saves data doesn't have to end for the program to terminate. 
+- Run in background , don't become a blocker for an application if the main tread terminates . Like a text editor . If main thread terminates, the saving thread that periodically saves data doesn't have to end for the program to terminate.
+
+```java
+
+thread.setDaemon(true)
+```
 
 
 
