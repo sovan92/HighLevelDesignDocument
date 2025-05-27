@@ -32,4 +32,28 @@ thread.setPriority(Thread.MAX_PRIORITY)
 What thread is running in the backgrounds when you debug an application . 
 - Finalizer
 - ReferenceHandler
-- Signal Dispatcher. 
+- Signal Dispatcher 
+
+## How to provide an exception handler for a thread which has a uncaught exception
+
+```java
+Thead thread = new Thread(new Runnable() {
+
+  @Override
+  public void run(){}
+});
+
+thead.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler(){
+
+   @Override
+    public void uncaughtException(Thread t, Throwable e){
+        System.out.println("A critical error Happened");
+    } 
+    
+
+});
+
+  thread.start();
+
+
+```
