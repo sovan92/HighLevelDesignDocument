@@ -57,7 +57,14 @@ thead.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler(){
 
 
 ```
-## Thread termination - Why and when ?
+## Thread termination - Why and when ? 
+
+```java
+thread.interupt()
+if (Thread.currentThread().isInterupted())
+InteruptedException
+```
+
 
 
 
