@@ -21,3 +21,6 @@ Topic are ways to logical partition based on events. Partition is a physical gro
 
 ### Partition
 Physical partition 
+
+### Microservice each with it's own database. 
+This is called database per service pattern. 
