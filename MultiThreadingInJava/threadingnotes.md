@@ -60,7 +60,7 @@ thead.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler(){
 ## Thread termination - Why and when ? 
 
 ```java
-thread.interupt() - Stops the tread if the thread in question throws an interupted exception or is handling the interupted signal explicitly (Thread.currentThread().isInterupted())
+# thread.interupt() - Stops the tread if the thread in question throws an interupted exception or is handling the interupted signal explicitly (Thread.currentThread().isInterupted())
 if (Thread.currentThread().isInterupted())
 InteruptedException
 
