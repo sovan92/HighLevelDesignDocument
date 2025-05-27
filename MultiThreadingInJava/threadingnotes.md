@@ -57,3 +57,7 @@ thead.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler(){
 
 
 ```
+## Thread termination - Why and when ?
+
+
+
