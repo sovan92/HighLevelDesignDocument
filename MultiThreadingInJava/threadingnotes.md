@@ -10,4 +10,26 @@ https://ford.udemy.com/course/java-multithreading-concurrency-performance-optimi
 - act of stoping a thread and run another is called context switch .
 - TOo many thread is called **Thrashing**.
 - Context switching between 2 threads in the same process is cheaper than context switching among multiple threads in different processes)
-- 
+
+## How OS decides when to run which thread . 
+- Starvation 
+- OS provides a time set called epoch .
+- Each epoch , can consist of multiple threads .
+
+
+
+## How to create a thread in Java 
+
+```java
+Thread.currentThread().getName() - Name
+thread.setName() - To set the thread name
+
+Thread.sleep(1000) - Don't schedule the thread until the time pass.
+thread.setPriority(Thread.MAX_PRIORITY) 
+
+```
+## How to visually debug
+What thread is running in the backgrounds when you debug an application . 
+- Finalizer
+- ReferenceHandler
+- Signal Dispatcher. 
