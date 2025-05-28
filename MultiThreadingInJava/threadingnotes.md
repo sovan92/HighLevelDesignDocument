@@ -77,6 +77,20 @@ InteruptedException
 thread.setDaemon(true)
 ```
 
+## Thread join 
+
+If we do a thread B check for thread A is finished the checking is taking a lot of CPU cycles. 
+
+-- Busy wait way
+```java
+factorialThread.isFinished()
+```
+
+-- TheadJoin 
+
+```java
+thread.join()
+```
 
 
 
