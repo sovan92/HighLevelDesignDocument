@@ -92,5 +92,10 @@ factorialThread.isFinished()
 thread.join()
 ```
 
+-- If I don't wait for more than 2 sec
+```java
+thread.join(2000)
+```
+
 
 
