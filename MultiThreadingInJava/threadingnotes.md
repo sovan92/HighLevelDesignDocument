@@ -161,6 +161,11 @@ public class ComplexCalculation {
 }
 
 ```
+## Stack vs Heap 
+
+Method is placed in stack in stack frame . Heap is shared by all stack. Anything that is allocated by new  is placed in heap. Members of a class , irrespective of whether primitive or not is stored in the heap. Static variables are stored in heap. Managed by the garbaze collector. 
+
+References are not object. References can be sometimes placed on the stack and sometime on the heap depending on where they are. 
 
 
 
