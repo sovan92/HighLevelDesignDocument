@@ -97,5 +97,72 @@ thread.join()
 thread.join(2000)
 ```
 
+### An example of thread join using Big Integer. 
+
+```java
+import java.math.BigInteger;
+
+public class ComplexCalculation {
+    public BigInteger calculateResult(BigInteger base1, BigInteger power1, BigInteger base2, BigInteger power2) {
+        BigInteger result = BigInteger.valueOf(0);
+        /*
+            Calculate result = ( base1 ^ power1 ) + (base2 ^ power2).
+            Where each calculation in (..) is calculated on a different thread
+        */
+        
+        PowerCalculatingThread pct1 = new PowerCalculatingThread(base1, power1);
+        
+        PowerCalculatingThread pct2 = new PowerCalculatingThread(base2, power2);
+        
+        try {
+            pct1.start();
+            pct1.join(2000);
+            pct2.start();
+            pct2.join(2000);
+        }
+        catch(InterruptedException e){
+            return result;
+        }
+        
+        
+        result = pct1.getResult().add(pct2.getResult());
+        
+        return result;
+    }
+
+    private static class PowerCalculatingThread extends Thread {
+        private BigInteger result = BigInteger.ONE;
+        private BigInteger base;
+        private BigInteger power;
+    
+        public PowerCalculatingThread(BigInteger base, BigInteger power) {
+            this.base = base;
+            this.power = power;
+        }
+    
+        @Override
+        public void run() {
+           /*
+           Implement the calculation of result = base ^ power
+           */
+           
+           for(BigInteger i = BigInteger.valueOf(0) ; i.compareTo(power) < 0  ; i = i.add(BigInteger.valueOf(1))){
+               
+               this.result = this.result.multiply(base);
+               
+           }
+           
+           
+           
+        }
+    
+        public BigInteger getResult() { return result; }
+    }
+}
+
+```
+
+
+
 
 
