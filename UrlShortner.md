@@ -1,5 +1,4 @@
 ```mermaid
-    flowchart LR;
 
     architecture-beta
     group api(cloud)[API]
