@@ -36,10 +36,11 @@
 
 ## API EndPoint
 
+```json
 POST /urls
 {
       originalUrl: String
       customAlias: String
       expirationTime: time
 }
-
+```
