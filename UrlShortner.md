@@ -29,5 +29,17 @@
 - At this point this is useless. (Doing math for the sake of doing math is useless. ), so we will do math when we take a decision. 
 
 ## Core Entities
-- This is the entities we store in the database and will pass into the system . I don't want to work on the full scale data model yet. 
+- This is the entities we store in the database and will pass into the system . I don't want to work on the full scale data model yet.
+- Full URL
+- Short URL
+- Now the URL is so small of a problem that we can provide data model here.
+
+## API EndPoint
+
+POST /urls
+{
+      originalUrl: String
+      customAlias: String
+      expirationTime: time
+}
 
