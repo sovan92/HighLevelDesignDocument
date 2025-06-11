@@ -1,5 +1,19 @@
 # High Level Design of URL shortner . 
 
+
+```mermaid
+
+flowchart LR;
+
+Requirements-->CoreEntities;
+CoreEntities-->API&Interfaces;
+API&Interfaces-->DataFlow;
+DataFlow-->HighLevelDesign;
+HighLevelDesign-->DeepDives;
+
+```
+
+
 ## Requirements (Functional)
 - Given a long URL , provide a shortURL ALIAS Example: https://www.google.com/maps/... -> short.com/ALPHA
       - User defined alias
@@ -36,6 +50,7 @@
 
 ## API EndPoint
 
+### First Functional Requirement
 ```json
 POST /urls
 {
@@ -44,3 +59,25 @@ POST /urls
       expirationTime: time
 }
 ```
+### 2nd functional Requirement 
+```json
+GET url
+
+Return Status code: 202 or 203
+
+```
+
+## High Level Design 
+
+- Do for API step by step by step .
+
+
+``mermaid
+ 
+flowchart LR;
+
+
+
+
+```
+
