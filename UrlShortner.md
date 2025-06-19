@@ -68,7 +68,7 @@ Return Status code: 202 or 203
 ```
 
 ## High Level Design 
-
+![High level design diagram](resources/url-shortener.png) 
 
 
 
