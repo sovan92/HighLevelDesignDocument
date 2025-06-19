@@ -69,12 +69,6 @@ Return Status code: 202 or 203
 
 ## High Level Design 
 
-- Do for API step by step by step .
-
-
-``mermaid
- 
-flowchart LR;
 
 
 
