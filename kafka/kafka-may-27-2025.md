@@ -46,9 +46,9 @@ Ordering is guarenteed in partition level .
 ### Consumer offset
 
 3 options for reading 
-from-beginning
-latest
-offset
+- from-beginning
+- latest
+- offset
 
 
 
