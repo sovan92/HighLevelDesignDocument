@@ -43,6 +43,13 @@ Once record is produced it can't be changed.
 Offset play an important role - it 
 Ordering is guarenteed in partition level . 
 
+### Consumer offset
+
+3 options for reading 
+from-beginning
+latest
+offset
+
 
 
 
