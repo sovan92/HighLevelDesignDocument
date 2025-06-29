@@ -89,7 +89,16 @@ min.insync.replicas = 3
 You won't be able to produce the msgs , unless 3 different brokers. 
 
 
+### How is KafkaTemplate sending events 
 
+```mermaid
+
+flowchart LR;
+
+
+
+
+```
 
 
 
