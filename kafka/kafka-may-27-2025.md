@@ -99,14 +99,21 @@ KafKaTemplate --> Serializer
 Serializer --> Partitioner
 Partitioner --> RecordAccumulator
 
+```
+- Any record sent to kafka is serialized first . There are 2 types of serializer . Key-serializer value serializer .
+- Partitioner - Default partitioner (partition into specific partition)
+- RecordAccumulaor - buffers the record and when the bufer is filled it is sent .
+- batch.size - Record batch - represented as number of bytes.
+- A set a batch.size for all partition is called buffer.ms
+- linger.ms - The value is represented in ms . Once the specific millisec is reached, the batch is sent.
 
-
-
+### Mandatory Values - to Configure kafka template
+```
+bootstrap-servers : localhost:9092, localhost:9093, localhost:9094 
+key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+value-serializer: org.apache.kafka.common.Serialization.StringSerializer 
 
 ```
-
-
-
 
 
 
