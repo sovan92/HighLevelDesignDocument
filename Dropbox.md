@@ -36,14 +36,19 @@ Roll own blob storage.
 
 ## API
 
-POST /files -> 201 / 202
+POST or PUT /files -> 201 / 202
 {
-  File
   FileMetadata
 }
+
+= SignedURL 
+
+POST 
 
 GET files/{fileId}
 
 POST changes?since={timestamp} -> List fileId[] -> This is required to keep a list of files. 
+
+
 
 
