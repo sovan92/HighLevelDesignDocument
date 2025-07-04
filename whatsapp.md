@@ -30,4 +30,11 @@ Clients - This means devices that is associated with a peer.
 
 ## API Interfaces
 
+Latency Sensitive. 
+- No Simple Polling.
+- Yes (Is there bidrectional frequent communication ?)
+      - No SSE
+      - Yes ( Peer to peer Audio Video Connection ?)
+            Yes - WebRTC
+             No  - WebSockets. 
 
