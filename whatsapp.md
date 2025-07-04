@@ -35,6 +35,6 @@ Latency Sensitive.
 - Yes (Is there bidrectional frequent communication ?)
 - - No SSE
 - - Yes ( Peer to peer Audio Video Connection ?)
-- - -Yes - WebRTC
-- - -No  - WebSockets. 
+- - - Yes - WebRTC
+- - - No  - WebSockets. 
 
