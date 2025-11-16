@@ -1,0 +1,33 @@
+# Caching 
+- Gobal Caching
+- In process caching
+-    Cache data right inside a a process . By passes a network hop. (Mintrade off , on server caches something , others don't see it.  ) 
+-    Cache config data or look up table .
+-    CDN - content delivery networks(Putting servers in the world as the network needs them)
+-    Client side caching
+-        - If there is a offline functionality (least important to know)
+- Cache Aside (Cache HIT )
+-     Only cache the data that user requested.
+-     Application checks the cache first . If not available , bring data from database and then puts data into cache. ) 
+- Write Through Caching 
+-     Write to cache then write to DB , then return to the user . (Not supported in redis and memcache, so it's is done by Spring cache, Hazel Cache. )
+-     Dual Write problem ,
+-         - Fancy rewrite .
+-         - Slower write.
+-         - Bloating the cache everytime . 
+- Write Behid
+-     Write to the cache ..
+-     Write to the DB is in batches .
+-     High write throughput is important .
+-     This is used in analytics pipeline.
+- Read through
+-     Read from the cache , if it miss, then go to the database. (It' can be used for CDN)
+- Eviction policy
+-     What to keep and what to remove. 
+-     least recently used (LRU)  - 
+-     least frequently used (LFU)  - Only used once.
+-     First in first out (Queue)
+-     TTL - user sessions, API response. (Super common. )
+- Uneven loads
+- Cache Stampede (Thundering herd problem )
+-     One query converts to 1000 database calls. 
